@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: url(../assets/cryptobg-min.jpg) no-repeat center center fixed;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    scroll-behavior: smooth;
+    font-family: 'Nunito Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #333333;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    margin: auto;
+    max-width: 720px;
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    padding: 1em 0 1em 0;
+    position: fixed !important;
+    z-index: 999 !important;
+    background: #93ee5f;
+    box-shadow: 0px 2px 6px #8cd95f;
+}
+
+.navtitle {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    color: #072e75;
+    text-decoration: none;
+}
+
+.containerIndex {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #060547;
+}
+
+.container {
+    margin: auto;
+    max-width: 700px;
+    padding-bottom: 5em;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.neumorphism-1 {
+    margin: auto;
+    height: auto;
+    width: 80%;
+    padding: 1.5em;
+    background: #70cbff;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px #5fb2d9, -10px -10px 30px #2f76fa;
+}
+
+.neumorphism-2 {
+    margin: auto;
+    height: auto;
+    width: 90%;
+    max-width: 620px;
+    padding: 1.5em;
+    border-radius: 30px;
+    background: #70cbff;
+    box-shadow: 10px 10px 30px #5fb2d9, -10px -10px 30px #2f76fa;
+}
+
+.input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    font-size: 18px;
+    overflow-wrap: break-word;
+    letter-spacing: 0.1em;
+    color: #091747;
+    margin-top: 0.7em;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+    width: 95%;
+    max-width: 95%;
+    padding: 1em;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    box-shadow: inset 2px 2px 5px #5fb2d9, inset -5px -5px 10px #81b3ff;
+    transition: all 0.2s ease-in-out;
+}
+
+.input:focus {
+    overflow-wrap: break-word;
+    box-shadow: inset 1px 1px 2px #5fb2d9, inset -1px -1px 2px #81b3ff;
+}
+
+.offsetinput {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: #091747;
+    margin-top: 0.2em;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+    max-width: 30%;
+    padding: 0.5em;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    box-shadow: inset 2px 2px 5px #5fb2d9, inset -5px -5px 10px #81b3ff;
+    transition: all 0.2s ease-in-out;
+}
+
+.offsetinput:focus {
+    box-shadow: inset 1px 1px 2px #5fb2d9, inset -1px -1px 2px #81b3ff;
+}
+
+.buttonindex {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 6px 2em;
+    display: flex;
+    flex-direction: column;
+    background: #213f92;
+    width: auto;
+    text-decoration: none;
+    color: #fff;
+    outline: none !important;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em;
+    font-family: 'Nunito Sans', sans-serif;
+    box-shadow: 10px 10px 15px #375faa40, -10px -8px 15px #0400ff40;
+    transition: 0.3s;
+}
+
+.buttonindex:hover {
+    background: #173072;
+    box-shadow: inset 2px 2px 5px #100f47, inset -3px -3px 7px #0400ff40;
+}
+
+.buttonindex:active {
+    outline: none !important;
+}
+
+.buttonindex:focus {
+    outline: none !important;
+}
+
+.button {
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0.8em 2em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    background: #213f92;
+    width: auto;
+    height: 33px;
+    text-decoration: none;
+    color: #fff;
+    outline: none !important;
+    border: .0625rem solid #41801c;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1em;
+    font-family: 'Nunito Sans', sans-serif;
+    box-shadow: 10px 10px 15px #375faa40, -10px -8px 15px #0400ff40;
+    transition: 0.3s !important;
+}
+
+.button:hover {
+    background: #212c92;
+    border: .0625rem solid #41801c00;
+    box-shadow: inset 2px 2px 5px #0400ff40, inset -3px -3px 7px #0400ff40;
+}
+
+.button:active {
+    outline: none !important;
+}
+
+.button:focus {
+    outline: none !important;
+}
+
+p {
+    font-weight: 300;
+    margin-top: 1em;
+    line-height: 1.45em;
+    width: 80%;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 1em;
+    text-decoration: none;
+}
+
+.home {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-top: 2em;
+}
+
+.homeC {
+    text-decoration: none;
+    color: black !important;
+    transition: 0.3s;
+}
+
+.homeC:hover {
+    text-decoration: none;
+    color: #181ce6 !important;
+}
+
+.txt-blue {
+    color: #181ce6 !important;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
