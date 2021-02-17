@@ -1,2 +1,2 @@
 # Yasaes
-Very simple plaintext encrypter
+Very simple Caesar's cypher encryptor/decryptor
