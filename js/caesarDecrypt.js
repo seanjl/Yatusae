@@ -1,4 +1,4 @@
-var alphabet = "abcdefghijklmnopqrstuvwxyz";
+var alphabet = " abcdefghijklmnopqrstuvwxyz0123456789!?.,:;'-_";
 var fullAlphabet = alphabet + alphabet + alphabet;
 
 function runCipher() {
@@ -10,7 +10,7 @@ function runCipher() {
 
     for (i = 0; i < cipherText.length; i++) {
         var letter = cipherText[i];
-        var upper = (letter == letter.toUpperCase());
+        var upper = (letter == letter.toLowerCase());
         letter = letter.toLowerCase();
 
         var index = alphabet.indexOf(letter);
@@ -19,7 +19,7 @@ function runCipher() {
         } else {
             index = ((index + cipherOffset) + alphabet.length);
             var nextLetter = fullAlphabet[index];
-            if (upper) nextLetter = nextLetter.toUpperCase();
+            if (upper) nextLetter = nextLetter.toLowerCase();
             cipherFinish += nextLetter;
         }
     }
