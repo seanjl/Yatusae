@@ -179,28 +179,28 @@ h1 {
     margin: auto;
     margin-top: 2em;
     margin-bottom: 2em;
-    padding: 0.8em 2em 2em 2em;
+    padding: 6px 2em;
     display: flex;
     flex-direction: column;
     background: #213f92;
     width: auto;
-    height: 33px;
+    max-width: 50%;
     text-decoration: none;
     color: #fff;
     outline: none !important;
-    border: .0625rem solid #41801c;
+    border: 0;
     border-radius: 25px;
+    text-align: center;
     font-weight: 700;
     font-size: 1em;
     font-family: 'Nunito Sans', sans-serif;
     box-shadow: 10px 10px 15px #375faa40, -10px -8px 15px #0400ff40;
-    transition: 0.3s !important;
+    transition: 0.3s;
 }
 
 .button:hover {
-    background: #212c92;
-    border: .0625rem solid #41801c00;
-    box-shadow: inset 2px 2px 5px #0400ff40, inset -3px -3px 7px #0400ff40;
+    background: #173072;
+    box-shadow: inset 2px 2px 5px #100f47, inset -3px -3px 7px #0400ff40;
 }
 
 .button:active {
