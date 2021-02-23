@@ -1,4 +1,6 @@
-var alphabet = " abcdefghijklmnopqrstuvwxyz0123456789!?.,:;'-_";
+var alphabet = "1qaz2w sx3edc4rfv5tgb6yhn7ujm8ik,9ol.0pñ-_?!";
+
+// var alphabet = " abcdefghijklmnopqrstuvwxyz0123456789!?.,:;'-_";
 var fullAlphabet = alphabet + alphabet + alphabet;
 
 function runCipher() {
