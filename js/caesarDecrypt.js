@@ -1,9 +1,7 @@
 var alphabet = "1qaz2w sx3edc4rfv5tgb6yhn7ujm8ik,9ol.0pñ-_?!";
-
-// var alphabet = " abcdefghijklmnopqrstuvwxyz0123456789!?.,:;'-_";
 var fullAlphabet = alphabet + alphabet + alphabet;
 
-function runCipher() {
+function decryptMessage() {
     var cipherText = $('#cypher').val();
     var cipherOffsetPos = $('#offset').val();
     var cipherOffset = -Math.abs(cipherOffsetPos); // This makes the key negative, solving the cypher
@@ -31,13 +29,14 @@ function runCipher() {
 
 $(document).ready(function() {
     $('#cypher').keypress(function() {
-        setTimeout(function() { runCipher(); }, 20);
+        setTimeout(function() { // When the 'encrypted message' textarea registers keyboard input -> run encryptMessage()
+            decryptMessage(); }, 20);
     });
-    $('#cypher').blur(function() {
-        runCipher();
+    $('#cypher').blur(function() { // When the 'encrypted message' textarea loses focus -> run encryptMessage()
+        decryptMessage();
     });
-    $('#offset').change(function() {
-        setTimeout(runCipher(), 20);
+    $('#offset').change(function() { // When the value 'encrypted message' textarea changes value -> run encryptMessage()
+        setTimeout(decryptMessage(), 20);
     });
 
 });

@@ -1,8 +1,7 @@
 var alphabet = "1qaz2w sx3edc4rfv5tgb6yhn7ujm8ik,9ol.0pñ-_?!";
-// var alphabet = " abcdefghijklmnopqrstuvwxyz0123456789!?.,:;'-_";
 var fullAlphabet = alphabet + alphabet + alphabet;
 
-function runCipher() {
+function encryptMessage() {
     var cipherText = $('#cypher').val();
     var cipherOffset = $('#offset').val();
     cipherOffset = (cipherOffset % alphabet.length);
@@ -27,15 +26,16 @@ function runCipher() {
     $('#finish').val(cipherFinish);
 }
 
+// The document must be fully loaded before it's manipulated
 $(document).ready(function() {
-    $('#cypher').keypress(function() {
-        setTimeout(function() { runCipher(); }, 20);
+    $('#cypher').keypress(function() { 
+        setTimeout(function() { encryptMessage(); }, 20); // When the 'unencrypted message' textarea registers keyboard input -> run encryptMessage()
     });
     $('#cypher').blur(function() {
-        runCipher();
+        encryptMessage(); // When the 'unencrypted message' textarea loses focus -> run encryptMessage()
     });
-    $('#offset').change(function() {
-        setTimeout(runCipher(), 20);
+    $('#offset').change(function() { // When the value 'unencrypted message' textarea changes value -> run encryptMessage()
+        setTimeout(encryptMessage(), 20);
     });
 
 });
